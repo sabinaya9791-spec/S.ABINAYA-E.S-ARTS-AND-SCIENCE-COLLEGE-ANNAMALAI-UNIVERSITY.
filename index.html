@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- User Info Form -->
+    <div id="user-form">
+      <h2>Welcome to the AI Quiz</h2>
+      <p>Please enter your details to begin:</p>
+      <input type="text" id="name" placeholder="Enter your Name" required>
+      <input type="text" id="regNo" placeholder="Enter your Register Number" required>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz" class="hidden">
+      <h2 id="question"></h2>
+      <div id="options"></div>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Quiz Completed 🎉</h2>
+      <p id="user-info"></p>
+      <p id="score"></p>
+      <h3>Thank you for participating!</h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
